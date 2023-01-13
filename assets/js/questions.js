@@ -23,14 +23,14 @@ var questions = [
     },
 
     { // question 3
-        question:" ",
+        question:"What is the correct syntax for declaring a variable in Javascript?",
         answers: [
-            "",
-            "",
-            "",
-            ""
+            "let var x = 5;",
+            "variable x = 5;",
+            "x := 5",
+            "var x = 5;"
         ],
-        correctAnswer: ""
+        correctAnswer: "var x = 5;"
     },
 
     { // question 4
