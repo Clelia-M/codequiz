@@ -55,4 +55,20 @@ function displayQuestion() {
 
 // Define function checkAnswer
 
+function checkAnswer(event) {
+    var selectedAnswer = event.target.value;
+    var correctAnswer = questions[currentQuestion].correctAnswer;
+
+    // Check if the answer selected by the user is correct or not
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    } else {
+        timer -= 10;
+    }
+
+    // Go to the following question
+
+
+}
+
 //Function endGame
