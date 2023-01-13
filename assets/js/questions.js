@@ -45,13 +45,13 @@ var questions = [
     },
 
     { // question 5
-        question:" ",
+        question:"Which of the following is a way to iterate over an array in Javascript?",
         answers: [
-            "",
-            "",
-            "",
-            ""
+            "for each (var i in myArray)",
+            "for (var i = 0; i < myArray.lenght; i++)",
+            "for (i in myArray)",
+            "for i in myarray"
         ],
-        correctAnswer: ""
+        correctAnswer: "for (var i = 0; i < myArray.lenght; i++)"
     },
 ];
