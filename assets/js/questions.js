@@ -34,14 +34,14 @@ var questions = [
     },
 
     { // question 4
-        question:" ",
+        question:"How do you check if a variable is defined in Javascript?",
         answers: [
-            "",
-            "",
-            "",
-            ""
+            "if (variable)",
+            "if (variable != null)",
+            "if (typeof variable !== 'undefined')",
+            "if (variable === defined"
         ],
-        correctAnswer: ""
+        correctAnswer: "typeof variable !== 'undefined'"
     },
 
     { // question 5
