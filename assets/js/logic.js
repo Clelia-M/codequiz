@@ -82,6 +82,9 @@ function endGame() {
     clearInterval(timer);
 
     // Remove the questions and show the end screen
-
+    // nb. question id #questions & final screen div id #end-screen
+    document.getElementById("questions").classList.add("hide");
+    document.getElementById("end-screen").classList.remove("hide");
+    
     //Display the final score
 }
