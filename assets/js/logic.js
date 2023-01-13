@@ -24,7 +24,7 @@ function startGame() {
 
 function updateTimer() {
     timer--;
-    document.getElementById("time").textContent = timer;
+    document.getElementById("time").innerHTML = timer;
 
     //Check if it has reached 0
     if (timer === 0) {
@@ -32,7 +32,7 @@ function updateTimer() {
     }
 }
 
-//displayQuesiton function
+//Define displayQuesiton function
 function displayQuestion() {
     var question = questions[currentQuestion].question;
     var answers = questions[currentQuestion].answers;
@@ -45,11 +45,14 @@ function displayQuestion() {
 
     //Display the potential answers
     for (var i = 0; i < answers.length; i++) {
-        var answerBtn = answers[i];
+        var answerBtn = document.createElement("button");
+        answerBtn.innerHTML = answers[i];
         answerBtn.setAttribute("value", answers[i]);
         answerBtn.addEventListener("click", checkAnswer);
         document.getElementById("choices").appendChild(answerBtn);
     }
 }
+
+// Define function checkAnswer
 
 //Function endGame
