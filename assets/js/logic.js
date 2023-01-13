@@ -77,3 +77,11 @@ function checkAnswer(event) {
 }
 
 // Define function endGame
+function endGame() {
+    //Stop the timer
+    clearInterval(timer);
+
+    // Remove the questions and show the end screen
+
+    //Display the final score
+}
