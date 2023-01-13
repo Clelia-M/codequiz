@@ -69,7 +69,7 @@ function checkAnswer(event) {
     currentQuestion++;
 
     // Checker if all questions have been answered
-    if (currentQuestion === question.length) {
+    if (currentQuestion === questions.length) {
         endGame();
     } else {
         displayQuestion();
