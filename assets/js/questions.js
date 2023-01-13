@@ -12,14 +12,14 @@ var questions = [
     },
 
     { // question 2
-        question: " ",
+        question: "How do you create a function in Javascript?",
         answers: [
-            "",
-            "",
-            "",
-            ""
+            "function myFunction(){}",
+            "function = myFunction() {}",
+            "myFunction => {}",
+            "let myFunction = () => {}"
         ],
-        correctAnswer: ""
+        correctAnswer: "function myFunction(){}"
     },
 
     { // question 3
