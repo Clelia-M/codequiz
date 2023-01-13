@@ -54,7 +54,6 @@ function displayQuestion() {
 }
 
 // Define function checkAnswer
-
 function checkAnswer(event) {
     var selectedAnswer = event.target.value;
     var correctAnswer = questions[currentQuestion].correctAnswer;
@@ -67,8 +66,14 @@ function checkAnswer(event) {
     }
 
     // Go to the following question
+    currentQuestion++;
 
-
+    // Checker if all questions have been answered
+    if (currentQuestion === question.length) {
+        endGame();
+    } else {
+        displayQuestion();
+    }
 }
 
-//Function endGame
+// Define function endGame
