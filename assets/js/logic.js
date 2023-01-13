@@ -11,15 +11,15 @@ var intervalId;
 
 function startGame() {
     // Hide the start screen and show the question (Nb. div ids #start-screen & #question)
-document.getElementById("start-screen").classList.add("hide");
-document.getElementById("questions").classList.remove("hide");
+    document.getElementById("start-screen").classList.add("hide");
+    document.getElementById("questions").classList.remove("hide");
 
-// Start the timer
-intervalId = setInterval(updateTimer, 1000);
-updateTimer();
+    // Start the timer
+    intervalId = setInterval(updateTimer, 1000);
+    updateTimer();
 
-// Display the first question
-displayQuestion();
+    // Display the first question
+    displayQuestion();
 }
 
 function updateTimer() {
@@ -29,9 +29,27 @@ function updateTimer() {
     //Check if it has reached 0
     if (timer === 0) {
         endGame()
-    }    
+    }
 }
 
+//displayQuesiton function
+function displayQuestion() {
+    var question = questions[currentQuestion].question;
+    var answers = questions[currentQuestion].answers;
 
-//Function displayQuestion
+    // Display the question (Nb. question title id #question-title)
+    document.getElementById("question-title").innerHTML = question;
+
+    //Clear any previous choice (Nb. choice id #choices)
+    document.getElementById("choices").innerHTML = "";
+
+    //Display the potential answers
+    for (var i = 0; i < answers.length; i++) {
+        var answerBtn = answers[i];
+        answerBtn.setAttribute("value", answers[i]);
+        answerBtn.addEventListener("click", checkAnswer);
+        document.getElementById("choices").appendChild(answerBtn);
+    }
+}
+
 //Function endGame
