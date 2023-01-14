@@ -38,9 +38,15 @@ function displayHighscores() {
         return b.score - a.score;
     });
     
-    
-
-
+    // Add the highscores to the list
+    for (var i = 0; i< highscores.lenght; i++) {
+        var highscore = highscores[i];
+        var initials = highscore.initials;
+        var score = highscore.score;
+        var listItem = document.createElement("li");
+        listItem.textContent = initials + " - " + score;
+        highscoresList.appendChild(listItem);
+    }
 }
 
 // Clear highscore function
