@@ -85,6 +85,7 @@ function endGame() {
     // nb. question id #questions & final screen div id #end-screen
     document.getElementById("questions").classList.add("hide");
     document.getElementById("end-screen").classList.remove("hide");
-    
+
     //Display the final score
+    document.getElementById("final-score").innerHTML = score;
 }
