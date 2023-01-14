@@ -88,3 +88,7 @@ li:nth-child(odd) {
   right: 10px;
 }
 
+#submit {
+  padding: 5px 25px;
+  margin-left: 10px;
+}
