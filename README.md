@@ -28,3 +28,6 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 - "displayHighscores" function is called when the user clicks the "View Highscores" button (top-left corner). It retrieves the scores from the Local storage, sorts them by score, and displays them on the screen. 
 - "clearHighscores" function: called when the user clicks the "Clear Highscores" button. It clears the scores from the Local storage. 
 - Change of the styling via the CSS file to adjust the design based on screenshoots provided for the challenge.
+
+## Link to deployed Application
+[Javascript Code Quiz Application](https://clelia-m.github.io/codequiz/index.html)
