@@ -30,12 +30,12 @@ button:hover {
   background-color: #BB59E6;
 }
 
-
 .choices button {
   display: block;
   width: 500px;
   height: 70px;
   text-align: start;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -92,6 +92,10 @@ li:nth-child(odd) {
 }
 
 #submit {
-  padding: 5px 25px;
+  padding: 2px 25px;
   margin-left: 10px;
+}
+
+h2 {
+  font-size: 40px;
 }
