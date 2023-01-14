@@ -54,4 +54,15 @@ var questions = [
         ],
         correctAnswer: "for (var i = 0; i < myArray.lenght; i++)"
     },
+
+    { // question 6
+        question:"What is the correct way to create an object in Javascript?",
+        answers: [
+            "new Object();",
+            "var obj = {}",
+            "var obj = Object.create();",
+            "object obj;"
+        ],
+        correctAnswer: "var obj = {}"
+    },
 ];
