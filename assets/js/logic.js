@@ -89,3 +89,31 @@ function endGame() {
     //Display the final score
     document.getElementById("final-score").innerHTML = score;
 }
+
+// Function to submit and store the initials and score
+document.getElementById("submit").addEventListener("click", function() {
+
+    // Get the initials and score from the input fields
+    var initials = document.getElementById("initials").value;
+    var score = document.getElementById("final-score").innerHTML;
+
+    // Create a new highscore object
+    var highscore = {
+        initials: initials,
+        score: score
+    };
+
+    // Check if the highscores already exist in local storage
+    var highscores = JSON.parse(localStorage.getItem("highscores"));
+
+    // if they don't exist, set highscores to an empty array
+    if (!highscores) {
+        highscores = [];
+    }
+
+    // Add the new highscore to the array
+    highscores.push(highscore);
+
+    // Save the highscores back to local storage
+    localStorage.setItem("highscores", JSON.stringify(highscores));
+});
