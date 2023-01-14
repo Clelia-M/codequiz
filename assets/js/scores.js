@@ -10,9 +10,18 @@ if (highscoresFromLocalStorage) {
     highscores = [];
 }
 
-
 // Display the highscores
+displayHighscores();
+
 // Clear the highscores when the clear button is clicked
+// nb. id for clear button #clear
+document.getElementById("clear").addEventListener("click", clearHighscores);
+
+//Clear the list
+highscoresList.innerHTML = "";
+
 // Save a new highscore
+
+
 // Display the highscores
 // Clear highscore function
