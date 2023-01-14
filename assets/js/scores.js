@@ -21,7 +21,6 @@ function displayHighscores() {
     });
 }
 
-// CLEAR IS WORKING FINE!!!
 // Clear the highscores when the clear button is clicked
 // nb. id for clear button #clear
 document.getElementById("clear").addEventListener("click", clearHighscores);
