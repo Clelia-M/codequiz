@@ -17,9 +17,6 @@ displayHighscores();
 // nb. id for clear button #clear
 document.getElementById("clear").addEventListener("click", clearHighscores);
 
-//Clear the list
-highscoresList.innerHTML = "";
-
 // Save a new highscore
 function saveHighscore(intials, score) {
     highscores.push({ initials, score });
@@ -50,3 +47,8 @@ function displayHighscores() {
 }
 
 // Clear highscore function
+function clearHighscores() {
+    highscores = [];
+    localStorage.removeItem("highscores");
+    displayHighscores();
+}
