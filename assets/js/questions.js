@@ -14,9 +14,9 @@ var questions = [
     { // question 2
         question: "How do you create a function in Javascript?",
         answers: [
-            "function myFunction(){}",
-            "function = myFunction() {}",
             "myFunction => {}",
+            "function = myFunction() {}",
+            "function myFunction(){}",
             "let myFunction = () => {}"
         ],
         correctAnswer: "function myFunction(){}"
@@ -41,7 +41,7 @@ var questions = [
             "if (typeof variable !== 'undefined')",
             "if (variable === defined"
         ],
-        correctAnswer: "typeof variable !== 'undefined'"
+        correctAnswer: "if (typeof variable !== 'undefined')"
     },
 
     { // question 5
