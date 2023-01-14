@@ -21,7 +21,10 @@ document.getElementById("clear").addEventListener("click", clearHighscores);
 highscoresList.innerHTML = "";
 
 // Save a new highscore
-
+function saveHighscore(intials, score) {
+    highscores.push({ initials, score });
+    localStorage.setItem("highscores", JSON.stringify(highscores));
+}
 
 // Display the highscores
 // Clear highscore function
