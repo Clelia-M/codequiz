@@ -27,4 +27,20 @@ function saveHighscore(intials, score) {
 }
 
 // Display the highscores
+function displayHighscores() {
+    var highscoresList = document.getElementById("highscores");
+
+    // Clear the list
+    highscoresList.innerHTML = "";
+
+    // Sort the highscores by score
+    highscores.sort(function compareScores(a, b) {
+        return b.score - a.score;
+    });
+    
+    
+
+
+}
+
 // Clear highscore function
