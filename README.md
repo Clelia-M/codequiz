@@ -9,8 +9,8 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 ## Table of Contents
 - [Scope](#scope-of-project)
 - [Workflow](#workflow)
-- [Final result](#final-results)
 - [Link to the Application](#link-to-deployed-application)
+- [Final result](#final-results)
 
 # Scope of the project
 1. The user clicks the Start button on the home page, which triggers the timer to start and the first question to be displayed. 
