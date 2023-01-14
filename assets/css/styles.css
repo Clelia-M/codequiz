@@ -4,13 +4,13 @@ body {
 }
 
 a {
-  color: #563d7c;
+  color: #BB59E6;
   text-decoration: none;
   transition: color 0.1s;
 }
 
 a:hover {
-  color: #8570a5;
+  color: #563d7c;
 }
 
 button {
@@ -87,3 +87,4 @@ li:nth-child(odd) {
   top: 10px;
   right: 10px;
 }
+
