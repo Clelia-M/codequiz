@@ -3,14 +3,14 @@ var timer = 60;
 var currentQuestion = 0;
 var score = 0;
 
-// When the start button is clicked, the game starts (Nb. button id #start)
+// When the start button is clicked, the game starts (button id #start)
 document.getElementById("start").addEventListener("click", startGame);
 
 //Declaring a var for the timer interval
 var intervalId;
 
 function startGame() {
-    // Hide the start screen and show the question (Nb. div ids #start-screen & #question)
+    // Hide the start screen and show the question (div ids #start-screen & #question)
     document.getElementById("start-screen").classList.add("hide");
     document.getElementById("questions").classList.remove("hide");
 
@@ -32,18 +32,18 @@ function updateTimer() {
     }
 }
 
-//Define displayQuesiton function
+// Define displayQuesiton function
 function displayQuestion() {
     var question = questions[currentQuestion].question;
     var answers = questions[currentQuestion].answers;
 
-    // Display the question (Nb. question title id #question-title)
+    // Display the question (question title id #question-title)
     document.getElementById("question-title").innerHTML = question;
 
-    //Clear any previous choice (Nb. choice id #choices)
+    // Clear any previous choice (choice id #choices)
     document.getElementById("choices").innerHTML = "";
 
-    //Display the potential answers
+    // Display the potential answers
     for (var i = 0; i < answers.length; i++) {
         var answerBtn = document.createElement("button");
         answerBtn.innerHTML = answers[i];
@@ -68,7 +68,7 @@ function checkAnswer(event) {
     // Go to the following question
     currentQuestion++;
 
-    // Checker if all questions have been answered
+    // Check if all questions have been answered
     if (currentQuestion === questions.length) {
         endGame();
     } else {
@@ -82,7 +82,7 @@ function endGame() {
     clearInterval(intervalId);
 
     // Remove the questions and show the end screen
-    // nb. question id #questions & final screen div id #end-screen
+    // question id #questions & final screen div id #end-screen
     document.getElementById("questions").classList.add("hide");
     document.getElementById("end-screen").classList.remove("hide");
 
