@@ -1,6 +1,10 @@
 # ❓Javascript Code Quiz Application
 This is a timed, multiple-choice coding quiz on Javascript fundamentals that can keep track of high scores and quiz-takers' initials.
-This application uses Javascript for the logic and HTML and CSS for the layout and styling. the questions are store in a separate Javascript file, and the high scores are stored in the local storage of the browser. It has been created by modifying a given HTML and CSS starter code and it is the challenge for week 6 of the Front-End Development bootcamp. 
+This application uses Javascript for the logic and HTML and CSS for the layout and styling. The questions are store in a separate Javascript file, and the high scores are stored in the local storage of the browser. 
+
+The Javascript code uses functions and event listeners to handle user interactions and update the content on the screen. It also uses the local storage to store the high scores. 
+
+It has been created by modifying a given HTML and CSS starter code and it is the challenge for week 6 of the Front-End Development bootcamp. 
 
 ## Table of Contents
 - [Scope](#scope-of-project)
@@ -16,3 +20,11 @@ This application uses Javascript for the logic and HTML and CSS for the layout a
 6. The user can also clear the high scores by clicking the "Clear Highscores" button on the high scores page.
 
 # Workflow
+- Declaration of global variables: timer, current quesiton and score.
+- "startGame" function: called when the user clicks the start button. This function hides the start screen and displays the questions. It also starts the timer by calling the "setInterval" function, which decrements the timer by one second and updates the timer display on the screen (top-right corner). If the timer reaches 0, the 'endGame' function is called. 
+- "displayQuestion" function: called to display the current question and the possible answers. The function uses the 'innerHTML' property to update the question title and answer choices on the screen. 
+- "checkAnswer" function: called when the user clicks an answer button. It compares the user's answer with the correct answer and update the score accordingly. If the answer is correct, the next question is dislayed. If the answer is incorrect, time (10 seconds) is subtracted from the timer. 
+- "endGame" function: called when the user has answered all the questions or the time reaches 0. It displays the final score and prompts the user to enter their initials and submit their score. The score is then stored in the Local storage. 
+- "displayHighscores" function is called when the user clicks the "View Highscores" button (top-left corner). It retrieves the scores from the Local storage, sorts them by score, and displays them on the screen. 
+- "clearHighscores" function: called when the user clicks the "Clear Highscores" button. It clears the scores from the Local storage. 
+- Change of the styling via the CSS file to adjust the design based on screenshoots provided for the challenge.
