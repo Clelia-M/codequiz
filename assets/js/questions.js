@@ -1,4 +1,4 @@
-// Set arrays for the questions and answers with correct answer for each fo them
+// Set arrays for the questions and answers with correct answer for each of them
 var questions = [
     { // question 1
         question: "Which is the correct way to add an element to the end of an array in Javascript?",
