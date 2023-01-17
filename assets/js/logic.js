@@ -87,6 +87,10 @@ function endGame() {
     document.getElementById("questions").classList.add("hide");
     document.getElementById("end-screen").classList.remove("hide");
 
+    // Remove the feedback
+    feedback = document.getElementById("feedback");
+    feedback.parentNode.removeChild(feedback);
+
     //Display the final score
     document.getElementById("final-score").innerHTML = score;
 }
