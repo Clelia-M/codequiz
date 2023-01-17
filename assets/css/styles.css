@@ -99,3 +99,9 @@ li:nth-child(odd) {
 h2 {
   font-size: 40px;
 }
+
+#feedback {
+  font-size: 30px;
+  color: grey;
+  font-style: italic;
+}
