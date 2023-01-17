@@ -62,6 +62,7 @@ function checkAnswer(event) {
     if (selectedAnswer === correctAnswer) {
         score++;
     } else {
+        document.getElementById("feedback").innerHTML = "Wrong answer!";
         timer -= 10;
     }
 
