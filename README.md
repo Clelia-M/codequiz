@@ -9,6 +9,7 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 ## Table of Contents
 - [Scope](#scope-of-project)
 - [Workflow](#workflow)
+- [Link to the Application](#link-to-deployed-application)
 - [Final result](#final-results)
 
 # Scope of the project
@@ -31,3 +32,12 @@ It has been created by modifying a given HTML and CSS starter code and it is the
 
 ## Link to deployed Application
 [Javascript Code Quiz Application](https://clelia-m.github.io/codequiz/index.html)
+
+## Final Results
+![Start page](https://github.com/Clelia-M/codequiz/blob/55ae8566c694d36ba37c01c7ae59635e36a50be8/app%20final/1_Start%20page.png)
+
+![Question page](https://github.com/Clelia-M/codequiz/blob/55ae8566c694d36ba37c01c7ae59635e36a50be8/app%20final/2_Question%20page.png)
+
+![EndGame page](https://github.com/Clelia-M/codequiz/blob/55ae8566c694d36ba37c01c7ae59635e36a50be8/app%20final/3_EndGame%20page.png)
+
+![HighScores page](https://github.com/Clelia-M/codequiz/blob/55ae8566c694d36ba37c01c7ae59635e36a50be8/app%20final/4_HighScores%20page.png)
